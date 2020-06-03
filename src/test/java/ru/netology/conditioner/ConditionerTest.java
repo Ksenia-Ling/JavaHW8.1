@@ -35,8 +35,8 @@ class ConditionerTest {
     @Test
     public void increaseTemperatureIfVeterokIsOff() {
         Conditioner conditioner = new Conditioner();
-        conditioner.setCurrentTemperature(20);
         conditioner.setOn(false);
+        conditioner.setCurrentTemperature(20);
         conditioner.increaseCurrentTemperature();
         int expected = 20;
         int actual = conditioner.getCurrentTemperature();
